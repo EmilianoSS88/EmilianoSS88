@@ -1,26 +1,31 @@
 name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule:
+  schedule: # Corre todos los días a medianoche
     - cron: "0 0 * * *"
-  workflow_dispatch:
+  workflow_dispatch: # Permite ejecutarlo manualmente
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-3d-contrib-svg
+    name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v4
       
-      # Usamos el repositorio activo de la comunidad
-      - uses: green-s/github-profile-3d-contrib@main
+      # Repositorio oficial del creador
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: EmilianoSS88
           
       - name: Commit & Push
         run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add -A .
-          git push
+          if git commit -m "generated 3d contrib"; then
+            git push
+          fi
