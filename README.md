@@ -44,10 +44,10 @@
 
 ###
 
-<!-- Estadísticas (Servidor directo Vercel) -->
+<!-- Estadísticas (Servidor oficial de Vercel) -->
 <div data-importer="stats" align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula&include_all_commits=true" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula" height="150" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&card_width=320&langs_count=5&theme=dracula" height="150" alt="languages graph" />
 </div>
 
 ###
