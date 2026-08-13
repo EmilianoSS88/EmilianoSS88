@@ -61,7 +61,8 @@
 
 ###
 
-<!-- Trofeos Desbloqueados -->
+<!-- Análisis de Productividad y Lenguajes -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=EmilianoSS88&theme=dracula&no-frame=true&row=1&column=7&margin-w=15" alt="Trofeos" />
+  <img src="./profile-summary-cards-output/dracula/3-productive-time.svg" width="48%" alt="Horarios Productivos" />
+  <img src="./profile-summary-cards-output/dracula/2-most-commit-language.svg" width="48%" alt="Lenguajes de Commits" />
 </div>
