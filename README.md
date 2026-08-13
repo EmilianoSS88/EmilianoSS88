@@ -42,15 +42,17 @@
 
 ###
 
-<!-- Estadísticas -->
+###
+
+<!-- Estadísticas (Servidor directo Vercel) -->
 <div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph" />
-  <img src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula&include_all_commits=true" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula" height="150" alt="languages graph" />
 </div>
 
 ###
 
-<!-- Ciudad 3D (Isometric Contribution Graph) -->
+<!-- Ciudad 3D -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/main/github-contribution-grid-snake.svg" alt="3D City Graph" />
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D City Graph" />
 </div>
