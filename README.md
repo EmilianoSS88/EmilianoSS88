@@ -44,11 +44,17 @@
 
 ###
 
-<!-- Estadísticas limpias -->
+<!-- Nuevas Estadísticas Profesionales -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula&v=1" height="150" alt="Estadísticas de Emiliano" />
-  <img width="10" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula&v=1" height="150" alt="Lenguajes de Emiliano" />
+  <!-- Tarjeta de Racha de Commits -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=EmilianoSS88&theme=dracula&hide_border=false" height="170" alt="Racha de Commits" />
+</div>
+
+###
+
+<div align="center">
+  <!-- Gráfica de Actividad de los últimos 31 días -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EmilianoSS88&bg_color=282a36&color=f8f8f2&line=ff79c6&point=bd93f9&area=true&hide_border=false" width="100%" alt="Gráfica de Actividad" />
 </div>
 
 ###
