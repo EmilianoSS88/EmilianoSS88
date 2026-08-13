@@ -61,11 +61,6 @@
 
 ###
 
-<!-- Análisis de Productividad y Lenguajes -->
 <div align="center">
-  
-  [![Mis Estadísticas](https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula&v=2)](https://github.com/EmilianoSS88)
-  
-  [![Mis Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula&v=2)](https://github.com/EmilianoSS88)
-
+  <img src="https://streak-stats.demolab.com/?user=EmilianoSS88&theme=dracula" height="150" alt="Racha de contribuciones" />
 </div>
