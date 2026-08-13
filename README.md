@@ -63,6 +63,9 @@
 
 <!-- Análisis de Productividad y Lenguajes -->
 <div align="center">
-  <img src="./profile-summary-cards-output/dracula/3-productive-time.svg" width="48%" alt="Horarios Productivos" />
-  <img src="./profile-summary-cards-output/dracula/2-most-commit-language.svg" width="48%" alt="Lenguajes de Commits" />
+  
+  [![Mis Estadísticas](https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula&v=2)](https://github.com/EmilianoSS88)
+  
+  [![Mis Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula&v=2)](https://github.com/EmilianoSS88)
+
 </div>
