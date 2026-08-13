@@ -65,8 +65,3 @@
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=EmilianoSS88&theme=dracula&no-frame=true&row=1&column=7&margin-w=15" alt="Trofeos" />
 </div>
-
-<!-- Ciudad 3D -->
-<div align="center">
-  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D City Graph" />
-</div>
