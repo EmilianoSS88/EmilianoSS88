@@ -46,9 +46,9 @@
 
 <!-- Estadísticas limpias -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula" height="150" alt="Estadísticas de Emiliano" />
+  <img src="https://github-readme-stats.vercel.app/api?username=EmilianoSS88&show_icons=true&theme=dracula&v=1" height="150" alt="Estadísticas de Emiliano" />
   <img width="10" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula" height="150" alt="Lenguajes de Emiliano" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EmilianoSS88&layout=compact&theme=dracula&v=1" height="150" alt="Lenguajes de Emiliano" />
 </div>
 
 ###
