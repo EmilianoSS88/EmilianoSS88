@@ -52,15 +52,11 @@
 
 ###
 
+<!-- Tablita de Cuadritos Verdes Animada -->
 <div align="center">
-  <!-- Gráfica de Actividad de los últimos 31 días -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EmilianoSS88&bg_color=282a36&color=f8f8f2&line=ff79c6&point=bd93f9&area=true&hide_border=false" width="100%" alt="Gráfica de Actividad" />
-</div>
-
-###
-
-###
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=EmilianoSS88&theme=dracula" height="150" alt="Racha de contribuciones" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
