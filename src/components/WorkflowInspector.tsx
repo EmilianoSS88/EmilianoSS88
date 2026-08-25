@@ -30,12 +30,10 @@ jobs:
       - name: Generate GitHub Snake
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: EmilianoSS88
+          github_user_name: \${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
           
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
