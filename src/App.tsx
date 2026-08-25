@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
+import { GitHubTroubleshooter } from './components/GitHubTroubleshooter';
 import { TechStack } from './components/TechStack';
 import { SnakeContributionViewer } from './components/SnakeContributionViewer';
 import { StatsDashboard } from './components/StatsDashboard';
@@ -50,6 +51,11 @@ export function App() {
       {/* Main Container */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         
+        {/* Troubleshooter for GitHub Profile Visibility */}
+        <section id="troubleshooter-section">
+          <GitHubTroubleshooter />
+        </section>
+
         {/* Snake Grid & Animation (Core Feature of the Repo) */}
         <section id="snake-section">
           <SnakeContributionViewer />

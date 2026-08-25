@@ -10,6 +10,10 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
 
 permissions:
   contents: write
@@ -31,8 +35,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
-          # Usamos tu pase VIP para leer todas tus contribuciones
-          GITHUB_TOKEN: \${{ secrets.PAT_VIP }}
+          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
           
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
@@ -40,8 +43,7 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          # Usamos tu pase VIP para guardar la imagen en el repositorio
-          GITHUB_TOKEN: \${{ secrets.PAT_VIP }}`;
+          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(yamlContent);
