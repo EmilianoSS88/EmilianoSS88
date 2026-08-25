@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { GitHubTroubleshooter } from './components/GitHubTroubleshooter';
 import { TechStack } from './components/TechStack';
-import { SnakeContributionViewer } from './components/SnakeContributionViewer';
+import { SpaceInvadersViewer } from './components/SpaceInvadersViewer';
 import { StatsDashboard } from './components/StatsDashboard';
 import { SocialLinks } from './components/SocialLinks';
 import { WorkflowInspector } from './components/WorkflowInspector';
@@ -56,9 +56,9 @@ export function App() {
           <GitHubTroubleshooter />
         </section>
 
-        {/* Snake Grid & Animation (Core Feature of the Repo) */}
-        <section id="snake-section">
-          <SnakeContributionViewer />
+        {/* Space Invaders Arcade & Activity Animation */}
+        <section id="invaders-section">
+          <SpaceInvadersViewer />
         </section>
 
         {/* Tech Stack & Engineering Toolkit */}

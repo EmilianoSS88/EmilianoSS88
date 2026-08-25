@@ -21,7 +21,7 @@ export const GitHubTroubleshooter: React.FC = () => {
       num: '2',
       title: 'Habilita permisos de Escritura en GitHub Actions',
       critical: true,
-      description: 'Para que el workflow genere la viborita y guarde las imágenes SVG en la rama "output", GitHub Actions necesita permiso de escritura.',
+      description: 'Para que el workflow de Space Invaders genere el GIF y lo guarde en la rama "output", GitHub Actions necesita permiso de escritura.',
       actionText: 'Abrir Permisos de Actions',
       actionUrl: `https://github.com/${PROFILE_INFO.username}/${PROFILE_INFO.username}/settings/actions`,
       howToFix: 'Ve a Settings > Actions > General > Baja a "Workflow permissions" > Selecciona "Read and write permissions" y pulsa "Save".',
@@ -29,44 +29,44 @@ export const GitHubTroubleshooter: React.FC = () => {
     {
       id: 'step-run-workflow',
       num: '3',
-      title: 'Ejecuta el Workflow de la Viborita por primera vez',
+      title: 'Ejecuta el Workflow de Space Invaders por primera vez',
       critical: true,
-      description: 'El script se ejecuta solo cada medianoche, por lo que la primera vez debes activarlo manualmente para que cree la rama "output" y las imágenes SVG.',
+      description: 'El script genera la animación arcade de Space Invaders basada en tus commits. Ejecútalo manualmente para crear el archivo space-shooter.gif en la rama "output".',
       actionText: 'Ir a la pestaña Actions para ejecutar',
-      actionUrl: `https://github.com/${PROFILE_INFO.username}/${PROFILE_INFO.username}/actions/workflows/snake.yml`,
-      howToFix: 'En la pestaña Actions > Selecciona "Generate Snake Animation" en la izquierda > Haz clic en "Run workflow" (botón azul/gris) > Espera ~30 segundos a que se ponga en verde ✅.',
+      actionUrl: `https://github.com/${PROFILE_INFO.username}/${PROFILE_INFO.username}/actions`,
+      howToFix: 'En la pestaña Actions > Selecciona "Generate Space Invaders Activity Animation" > Haz clic en "Run workflow" > Espera a que se complete en verde ✅.',
     },
     {
       id: 'step-secret',
       num: '4',
-      title: 'Solución a "Bad credentials (401)"',
-      critical: true,
-      description: 'El error 401 ocurre porque el archivo snake.yml intentaba usar un secret llamado "PAT_VIP" que no existe o expiró. Ya actualizamos snake.yml para usar el token automático de GitHub (GITHUB_TOKEN). ¡Solo haz commit/push o pega el nuevo snake.yml en tu repo!',
-      actionText: 'Ver código corregido en el Inspector',
-      actionUrl: `#workflow-readme-section`,
-      howToFix: 'Asegúrate de que tu archivo .github/workflows/snake.yml en GitHub tenga "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}" en lugar de PAT_VIP.',
+      title: 'Archivo de Workflow .github/workflows/space-invaders.yml',
+      critical: false,
+      description: 'Hemos creado el archivo space-invaders.yml listo para usar con czl9707/gh-space-shooter@master y secrets.GITHUB_TOKEN para evitar cualquier error de credenciales.',
+      actionText: 'Ver código en el Inspector',
+      actionUrl: `#workflow-section`,
+      howToFix: 'Revisa la sección "GitHub Actions Workflow" abajo para copiar el archivo YAML y pegarlo en tu carpeta .github/workflows/.',
     },
   ];
 
   return (
-    <div className="bg-gradient-to-br from-amber-950/40 via-zinc-900/80 to-zinc-900/60 border-2 border-amber-500/40 rounded-2xl p-6 backdrop-blur-sm relative overflow-hidden shadow-xl shadow-amber-500/5">
-      {/* Decorative warning banner top */}
+    <div className="bg-gradient-to-br from-emerald-950/40 via-zinc-900/80 to-zinc-900/60 border-2 border-emerald-500/40 rounded-2xl p-6 backdrop-blur-sm relative overflow-hidden shadow-xl shadow-emerald-500/5">
+      {/* Header Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-zinc-800">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0">
-            <AlertTriangle className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 text-lg">
+            👾
           </div>
           <div>
             <div className="flex items-center gap-2">
               <h2 className="text-lg font-bold text-white tracking-tight">
-                ¿Por qué no se ve en tu perfil de GitHub? (Guía de Solución Paso a Paso)
+                Guía de Activación de Space Invaders en tu Perfil de GitHub
               </h2>
-              <span className="px-2 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                Solución Rápida
+              <span className="px-2 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                Paso a Paso
               </span>
             </div>
             <p className="text-xs text-zinc-300 mt-0.5">
-              Sigue estos 3 pasos rápidos en tu repositorio <code className="text-amber-300 font-mono font-bold">EmilianoSS88/EmilianoSS88</code> en GitHub:
+              Sigue estos 3 pasos rápidos en tu repositorio <code className="text-emerald-300 font-mono font-bold">EmilianoSS88/EmilianoSS88</code> en GitHub:
             </p>
           </div>
         </div>
@@ -88,20 +88,20 @@ export const GitHubTroubleshooter: React.FC = () => {
                 key={step.id}
                 className={`p-4 rounded-xl border flex flex-col justify-between ${
                   step.critical
-                    ? 'bg-zinc-950/80 border-amber-500/30 hover:border-amber-500/60'
+                    ? 'bg-zinc-950/80 border-emerald-500/30 hover:border-emerald-500/60'
                     : 'bg-zinc-950/50 border-zinc-800 hover:border-zinc-700'
                 } transition`}
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="flex items-center gap-2 text-xs font-bold font-mono text-amber-400">
-                      <span className="w-5 h-5 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-[11px] text-amber-300">
+                    <span className="flex items-center gap-2 text-xs font-bold font-mono text-emerald-400">
+                      <span className="w-5 h-5 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-[11px] text-emerald-300">
                         {step.num}
                       </span>
                       {step.title}
                     </span>
                     {step.critical && (
-                      <span className="text-[10px] uppercase tracking-wider font-mono font-bold text-rose-400 px-1.5 py-0.2 rounded bg-rose-500/10 border border-rose-500/20">
+                      <span className="text-[10px] uppercase tracking-wider font-mono font-bold text-amber-400 px-1.5 py-0.2 rounded bg-amber-500/10 border border-amber-500/20">
                         Obligatorio
                       </span>
                     )}
@@ -112,7 +112,7 @@ export const GitHubTroubleshooter: React.FC = () => {
                   </p>
 
                   <div className="p-2.5 rounded-lg bg-zinc-900/90 border border-zinc-800 text-[11px] text-zinc-300 mb-3">
-                    <span className="font-semibold text-amber-300">Cómo hacerlo:</span> {step.howToFix}
+                    <span className="font-semibold text-emerald-300">Cómo hacerlo:</span> {step.howToFix}
                   </div>
                 </div>
 
@@ -120,7 +120,7 @@ export const GitHubTroubleshooter: React.FC = () => {
                   href={step.actionUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-amber-200 text-xs font-semibold transition"
+                  className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-200 text-xs font-semibold transition"
                 >
                   <span>{step.actionText}</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -134,7 +134,7 @@ export const GitHubTroubleshooter: React.FC = () => {
             <div className="flex items-center gap-2 text-zinc-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>
-                Una vez completados los pasos 1, 2 y 3, visita{' '}
+                Una vez ejecutada la Action, visita{' '}
                 <a
                   href={`https://github.com/${PROFILE_INFO.username}`}
                   target="_blank"
@@ -143,7 +143,7 @@ export const GitHubTroubleshooter: React.FC = () => {
                 >
                   github.com/{PROFILE_INFO.username} <ExternalLink className="w-3 h-3" />
                 </a>{' '}
-                y verás tu perfil con la viborita animada y todas tus estadísticas.
+                y verás tu perfil con la animación Space Invaders de disparos y tus estadísticas.
               </span>
             </div>
           </div>

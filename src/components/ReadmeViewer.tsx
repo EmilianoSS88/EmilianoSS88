@@ -64,12 +64,11 @@ export const ReadmeViewer: React.FC = () => {
 
 ###
 
-<!-- Tablita de Cuadritos Verdes Animada -->
+<!-- Animación Arcade Space Invaders / Contribuciones -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/space-shooter.gif">
+    <img alt="github contribution space invaders animation" src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/space-shooter.gif" width="100%">
   </picture>
 </div>`;
 
@@ -160,9 +159,16 @@ export const ReadmeViewer: React.FC = () => {
             <img src="https://github-readme-activity-graph.vercel.app/graph?username=EmilianoSS88&bg_color=282a36&color=f8f8f2&line=ff79c6&point=bd93f9&area=true&hide_border=false" alt="Gráfica de Actividad" className="w-full h-auto rounded" />
           </div>
 
-          {/* Snake SVG */}
+          {/* Space Invaders / Shooter Animation */}
           <div className="w-full flex justify-center">
-            <img src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/github-contribution-grid-snake-dark.svg" alt="github contribution grid snake" className="max-w-full h-auto rounded" />
+            <img
+              src="https://raw.githubusercontent.com/EmilianoSS88/EmilianoSS88/output/space-shooter.gif"
+              alt="github contribution space invaders"
+              className="max-w-full h-auto rounded"
+              onError={(e) => {
+                e.currentTarget.src = 'https://raw.githubusercontent.com/czl9707/gh-space-shooter/master/assets/output.gif';
+              }}
+            />
           </div>
         </div>
       ) : (

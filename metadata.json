@@ -1,6 +1,6 @@
 {
   "name": "Emiliano Serrano Sánchez - Profile",
-  "description": "Portfolio and developer profile showcase for Emiliano Serrano Sánchez, featuring interactive GitHub contribution snake, live stats, tech stack showcase, and social links.",
+  "description": "Portfolio and developer profile showcase for Emiliano Serrano Sánchez, featuring interactive GitHub contribution Space Invaders arcade, live stats, tech stack showcase, and workflow inspector.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
