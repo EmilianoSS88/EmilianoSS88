@@ -22,6 +22,9 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Prepare output directory
+        run: mkdir -p dist
+
       - name: Generate Space Shooter Contribution Animation
         uses: czl9707/gh-space-shooter@v2
         with:
