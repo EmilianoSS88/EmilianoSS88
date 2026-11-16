@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - master
 
 permissions:
   contents: write
@@ -24,14 +23,15 @@ jobs:
           fetch-depth: 2
 
       - name: Generate Space Shooter Contribution Animation
-        uses: czl9707/gh-space-shooter@master
+        uses: czl9707/gh-space-shooter@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: EmilianoSS88
           output-path: ./dist/space-shooter.gif
-          strategy: column # column, row, or random
+          strategy: column
           fps: 20
 
-      - name: Push to output branch
+      - name: Publish animation to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
